@@ -1,0 +1,178 @@
+.WeatherHub_title{
+    text-align: center;
+    margin-top: 24px;
+    background: transparent;
+    color: #402E32;
+    font-size: 32px;
+    font-family: 'Playfair';
+    font-weight: 500;
+    word-wrap: break-word;
+}
+.WeatherHub_Search{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    background: #FFF7F1; 
+    box-shadow: 0px 0px 5px 4px #F6EFE6;
+    border-radius: 48px; 
+    padding-top: 8px;
+    padding-bottom: 8px; 
+    padding-right: 10px;
+    padding-left: 40px;
+    overflow: hidden; 
+    border: 0.2px ; 
+    gap: 180px;    
+    width: 498px;
+    height: 56px;
+}
+.WeatherHub_search-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+}
+.WeatherHub-Input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 18px;
+    opacity: 0.7;
+    word-break: break-word;
+    border: 0;
+    outline: none;
+    background-color: #FFF7F1;
+}
+.WeatherHub_main{
+
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 560px;
+}
+.WeatherHub_left{
+    background: transparent;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding-left: 80px;
+    gap: 8px;
+}
+.Progress_Bar{
+    height: 88px;
+}
+.WeatherHub_left_texts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+.WeatherHub_left_text1,.WeatherHub_left_text2,.WeatherHub_left_text3{
+    text-decoration: none;
+    background: transparent;
+    color: #402E32;
+    font-size: 17px;
+    font-family: 'Playfair Display';
+    font-weight: 200;
+    word-wrap: break-word;
+}
+.WeatherHub_left_text2,.WeatherHub_left_text3{
+    opacity: 0.5;
+}
+.WeatherHub_right{
+    background: transparent;
+    margin-top: 24px;
+    margin-right: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: baseline;
+}
+.WeatherHub_right_current_Location{
+    color: #402E32;
+    background: transparent;
+    background: transparent;
+    font-size: 16px;
+    opacity: 0.5;
+    font-family: 'Playfair Display';
+    font-weight: 300;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+.WeatherHub_right_Location{
+    display: flex;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 16px;
+}
+.WeatherHub_right_Location-Name{
+    color: #402E32;
+    background: transparent;
+    font-size: 32px;
+    font-family: 'Playfair Display';
+    font-weight: 600;
+    line-height: 40px;
+    word-wrap: break-word;
+}
+.WeatherHub_right_Location-codinate{
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    align-items: center;
+    flex-direction: row;
+    gap: 2px;
+}
+.WeatherHub_right_Location-codinate1{
+    margin-top: 10px;
+    color: #402E32;
+    font-size: 18px;
+    opacity: 0.5;
+    font-family: 'Lora';
+    font-weight: 600;
+    line-height: 40px;
+    word-wrap: break-word;
+}
+.WeatherHub_temp{
+    display: flex;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    flex-direction: row;
+    gap: 24px;
+}
+.WeatherHub_temp_icon{
+    width: 56px;
+    height: 56px;
+    color: #FB8500;
+}
+.WeatherHub_Temp_lock{
+    color: #402E32;
+    font-size: 96px;
+    font-family: 'Playfair Display';
+    font-family: 'Lora';
+    font-weight: 540;
+    line-height: 40px;
+    word-wrap: break-word;
+}
+.WeatherHub_temp-C{
+    margin-top: 10px;
+    color: #402E32;
+    font-size: 32px;
+    font-family: 'Playfair Display';
+    font-weight: 600;
+    line-height: 40px;
+    word-wrap: break-word;
+}

@@ -3,11 +3,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './Components/Home';
 import Review from "./Components/Review";
 import Planning from "./Components/Planning";
-import Register from './Components/Register';
-import Register1 from './Components/Register1';
-import Register2 from './Components/Register2';
-import Register3 from './Components/Register3';
+import Signup from "./Components/Signup";
 import Choose from "./Components/Choose";
+import WeatherHub from "./Components/WeatherHub";
+import Login from "./Components/Login";
 
 const App = () => {
   return (
@@ -17,6 +16,8 @@ const App = () => {
       <Route path='/choose' element={<Choose />} />
       <Route path='/planning' element={<Planning />} />
       <Route path='/review' element={<Review />} />
+      <Route path='/weatherHub' element={<WeatherHub />} />
+      <Route path='/login' element={<Login />} />
       <Route path='/' element={<Signup />} />
     </Routes>
   </BrowserRouter>

@@ -1,0 +1,72 @@
+.login_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding-top: 240px;
+}
+.login_main_title{
+    text-align: center;
+    color: #402E32;
+    font-size: 56px;
+    font-family: 'Playfair Display';
+    font-weight: 600;
+    line-height: 24px;
+    line-height: 32px;
+    word-wrap: break-word;
+}
+.login_main_qu1{
+    padding-top: 40px;
+}
+.login_main_qu1,.login_main_qu2{
+    text-align: center;
+    color: #402E32;
+    opacity: 0.9;
+    font-size: 48px;
+    font-family: 'Playfair Display';
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+.login_main_ans1,.login_main_ans2{ 
+    width: 400px;
+    background: transparent;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Playfair Display';
+    line-height: 24px;
+    word-break: break-word;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #FB8500;
+}
+.login_button{
+    width: 212px;
+    height: 48px;  
+    background-color: #FB8500;
+    border: 0;
+    border-radius: 12px;
+    margin-top: 18px;
+    color: #F6EFE6;
+    font-size: 24px;
+}
+.login_main_sub{
+    
+    color: #402E32;
+    opacity: 0.8;
+    font-size: 24px;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.login_main_sub_link{
+    text-decoration-line: underline;
+    padding-left: 8px;
+    color: #402E32;
+    font-size: 24px;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    word-wrap: break-word;
+}

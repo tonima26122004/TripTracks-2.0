@@ -1,7 +1,7 @@
 import React from "react";
 import "../Style/Register3.css";
 import { useNavigate } from "react-router-dom";
-function Register3() {
+function Register3({handleChange, values}) {
   const navigate = useNavigate();
   return (
     <div className="Main3">
@@ -40,7 +40,7 @@ function Register3() {
           onChange={handleChange("cpassword")}
           required
         />
-        <button onClick={handleAuthenticate} className="Main1_button">
+        <button className="Main1_button">
           Continue
         </button>
       </div>
