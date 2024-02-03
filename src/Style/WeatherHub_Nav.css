@@ -1,0 +1,49 @@
+nav{
+    display: flex;
+    height: 104px;
+    width: 100%;
+    background-color: #FFF7F1;
+    box-shadow: 0px 4px 4px #F6EFE6;
+}
+.Logo{
+    left: 160px; 
+    top: 34px;
+    position: absolute;
+}
+.Logo img{
+    width: 158px;
+    height: 32px;
+}
+.rightside{
+    right: 160px;
+    top: 20px; 
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.rightside a{
+    color: #402E32;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: capitalize; 
+    word-wrap: break-word;
+    position: relative;
+    top: 20px;
+}
+.Live{
+    position: relative;
+    top: 3px;
+    left: 24px;
+}
+.notification{
+    height: 36px;
+    width: 36px;
+    position: relative;
+    top: 14px;
+}
+.User{
+    height: 64px;
+    width: 64px;
+}
+

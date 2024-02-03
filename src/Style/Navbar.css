@@ -1,51 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-nav{
+.NAV{
     display: flex;
-    height: 98px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 640px;
+    height: 104px;
     width: 100%;
     background-color: #FFF7F1;
     box-shadow: 0px 4px 4px #F6EFE6;
 }
-.Logo{
+.NAV_left{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    margin-left: 160px;
 }
-.Logo img{
+.NAV_logo{
     width: 158px;
     height: 32px;
 }
-.rightside{
-    right: 80px;
-    top: 20px; 
-    position: absolute;
+
+.NAV_right{
     display: flex;
-    justify-content: space-between;
-    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 28px;
 }
-.rightside a{
+.NAV_right_Noti{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+}
+.NAV_Live{
+    size: 2.5em;
+}
+.NAV_Weatherhub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #402E32;
+    font-family: 'Playfair';
     font-size: 24px;
-    text-decoration: none;
-    text-transform: capitalize; 
-    font-family: 'Playfair Display';
+    font-weight: 600;
     word-wrap: break-word;
-    position: relative;
-    top: 16px;
 }
-.Live{
-    position: relative;
-    top: 3px;
-    left: 24px;
-}
-.notification{
+.NAV_notification{
     height: 36px;
     width: 36px;
-    position: relative;
-    top: 14px;
 }
 .User{
     height: 64px;

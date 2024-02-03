@@ -11,10 +11,13 @@ function WeatherHub() {
                 <h1 className="WeatherHub_title">Get live weather and altitude info for your travel spots instantly</h1>
                 
                 <div className="WeatherHub_Search">
+                    <div className="WeatherHub_Search_box">
                     <div className="WeatherHub-Input">
                         <input className="WeatherHub-Input" type="text" id="fname" name="fname" placeholder="Search Places"/>
                     </div>
                     <img className="WeatherHub_search-image" src="/images/Search Button.png" alt="Search"/>
+                    </div>
+                    
                 </div>
             </div>
             <div className="WeatherHub_main">
