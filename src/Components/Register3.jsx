@@ -1,11 +1,22 @@
 import React from "react";
 import "../Style/Register3.css";
+import "../Style/Register1.css";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../config/firebase";
+import { useNavigate } from "react-router-dom";
 
 function Register3({ handleChange, values }) {
-  const { email, password } = values;
-
+  const { email, password, cpassword } = values;
+  const navigate = useNavigate();
   const handleAuthenticate = () => {
-    console.log();
+    if(password===cpassword){
+        try{
+            createUserWithEmailAndPassword(auth,email,password);
+        }
+        catch(e){
+            console.log(e);
+        }
+    }
   };
   return (
     <div className="Main3">
@@ -44,7 +55,10 @@ function Register3({ handleChange, values }) {
           onChange={handleChange("cpassword")}
           required
         />
-        <button onClick={handleAuthenticate} className="Main1_button">
+        <button type="submit" onClick={()=>{
+            handleAuthenticate();
+            navigate("/choose");
+        }} className="Main1_button">
           Continue
         </button>
       </div>
