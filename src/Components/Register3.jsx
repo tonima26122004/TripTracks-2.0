@@ -5,11 +5,14 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../config/firebase";
 import { useNavigate } from "react-router-dom";
 
+
 function Register3({ handleChange, values }) {
-  const { email, password, cpassword } = values;
+   const { email, password, cpassword } = values;
   const navigate = useNavigate();
   const handleAuthenticate = () => {
+    
     if (password === cpassword && password !== null && cpassword !== null) {
+
       try {
         createUserWithEmailAndPassword(auth, email, password);
       } catch (e) {
@@ -18,6 +21,7 @@ function Register3({ handleChange, values }) {
     }
 
   };
+  
   return (
     <div className="Main3">
       <img className="Ellipse" src="/images/Ellipse_login.png" alt="bg" />
@@ -40,7 +44,7 @@ function Register3({ handleChange, values }) {
         <p className="Main3_qu1">Set Password</p>
         <input
           className="Main3_ans1"
-          type="text"
+          type="password"
           id="password"
           value={values.password}
           onChange={handleChange("password")}
@@ -49,7 +53,7 @@ function Register3({ handleChange, values }) {
         <p className="Main3_qu2">Confirm Password</p>
         <input
           className="Main3_ans2"
-          type="text"
+          type="password"
           id="password"
           value={values.cpassword}
           onChange={handleChange("cpassword")}
@@ -57,7 +61,7 @@ function Register3({ handleChange, values }) {
         />
         <button
           type="submit"
-          onClick={()=>{handleAuthenticate(); navigate("/choose")}}
+          onClick={()=>{handleAuthenticate(); navigate("/Choose")}}
           className="bg-[#FB8500] w-[212px] h-[48px] text-[24px] ml-auto mr-auto absolute left-0 right-0 rounded-[12px] mt-[72px] text-[#F6EFE6]"
         >
           Continue

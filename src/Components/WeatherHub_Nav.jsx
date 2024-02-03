@@ -8,7 +8,7 @@ function WeatherHub_Nav(){
         <div>
             <nav>
                 <div className="Logo" >
-                <a href="/home"><img src="/images/TripTracks.png" alt="Logo"/></a> 
+                <a href="/choose/discover"><img src="/images/TripTracks.png" alt="Logo"/></a> 
                 </div>
                 <div className="rightside">
                     <img className="notification" src="/images/Notification.svg" alt="notification"/>
