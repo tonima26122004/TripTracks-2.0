@@ -7,7 +7,7 @@ function Navbar(){
     return(
         <div className="NAV">
             <div className="NAV_left">
-            <a className="NAV_logo" href="/home"><img src="/images/TripTracks.png" alt="Logo"/></a> 
+            <a className="NAV_logo" href="/choose"><img src="/images/TripTracks.png" alt="Logo"/></a> 
             </div>
             <div className="NAV_right">
                 <div className="NAV_right_Noti">
