@@ -1,0 +1,31 @@
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 24px;
+  }
+  li {
+    list-style-type: none;
+    color: black;
+  }
+  .Discover,.planning,
+  .Review{
+      text-decoration: none;
+      color: #402E32;
+      font-weight: 600;
+  }
+  .User_text {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+    gap: 80px;
+    margin-top: 24px;
+    font-family: 'Playfair';
+    font-size: 28px;
+    font-weight: 500px;
+    line-height: 24px;
+    word-wrap: break-word;
+  }
+  

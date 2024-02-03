@@ -1,28 +1,49 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Destinations from "./Destinations";
-import '../Style/Home.css';
-import Recommended from "./Recommended";
-import Destination_week from "./Destination_week";
-import Reason from "./Reason";
-import Subscribe from "./Subscribe";
-import Footer from "./Footer";
+import { useParams } from "react-router-dom";
+import "../Style/Home.css";
 
-function Home() {
-  return (
-    <div>
-      <Navbar />
-      <div className="Home_Discover">
-        <h1 className="Home_Discover">Discover</h1>
+function Home({
+  Destinations,
+  Recommended,
+  Destination_week,
+  Reason,
+  Subscribe,
+  Footer,
+  User_output,
+  Search,
+  Navbar,
+}) {
+  const { tab } = useParams();
+  if (tab === "discover") {
+    return (
+      <div>
+        {Navbar}
+        {User_output}
+        {Search}
+        {Destinations}
+        {Recommended}
+        {Destination_week}
+        {Reason}
+        {Subscribe}
+        {Footer}
       </div>
-      <Destinations/>
-      <Recommended/>
-      <Destination_week/>
-      <Reason/>
-      <Subscribe/>
-      <Footer/>
-    </div>
-  );
+    );
+  } else if (tab === "planning") {
+    return (
+      <div>
+        {Navbar}
+        {User_output}
+        {Footer}
+      </div>
+    );
+  } else if (tab === "review") {
+    return (
+      <div>
+        {Navbar}
+        {User_output}
+        {Footer}
+      </div>
+    );
+  }
 }
 export default Home;
-

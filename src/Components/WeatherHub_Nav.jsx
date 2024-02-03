@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../Style/Navbar.css';
+import '../Style/WeatherHub_Nav.css';
 import DroupDownProfile from "./Dropdown";
 
 function WeatherHub_Nav(){
@@ -8,7 +8,7 @@ function WeatherHub_Nav(){
         <div>
             <nav>
                 <div className="Logo" >
-                <a href="/Home"><img src="/images/TripTracks.png" alt="Logo"/></a> 
+                <a href="/choose/discover"><img src="/images/TripTracks.png" alt="Logo"/></a> 
                 </div>
                 <div className="rightside">
                     <img className="notification" src="/images/Notification.svg" alt="notification"/>

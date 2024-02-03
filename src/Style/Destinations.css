@@ -6,17 +6,15 @@
     font-family: 'Playfair Display';
     line-height: 32px;
     word-wrap: break-word;
-    margin-top: 64px;
+    margin-top: 32px;
     margin-left: 80px;
     margin-bottom: 32px;
 }
 .Destinations{
     display: flex;
-    justify-content: space-between;
-    align-content: center;
+    justify-content: center;
     align-items: center;
-    margin-left: 80px;
-    margin-right: 80px;
+    gap: 48px;
 }
 
 .image{
