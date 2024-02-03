@@ -9,7 +9,7 @@ function Register3({ handleChange, values }) {
   const { email, password, cpassword } = values;
   const navigate = useNavigate();
   const handleAuthenticate = () => {
-    if(password===cpassword){
+    if(password===cpassword && password!==null && cpassword!==null){
         try{
             createUserWithEmailAndPassword(auth,email,password);
         }
