@@ -9,7 +9,7 @@ function WeatherHub() {
   const [activeTab, setActiveTab] = useState("tab1");
   const { place } = useParams();
   const [data, setData] = useState({});
-  
+
   const styles = {
     active: {
       color: "#402E32",
@@ -22,25 +22,32 @@ function WeatherHub() {
   const apikey = "a0e9da674faffcda28aede6a39250e7e";
   const url = `http://api.openweathermap.org/geo/1.0/direct?q=${place}&limit=2&appid=${apikey}`;
   let lon, lat;
-  
+
   useEffect(() => {
     const fetchData = async () => {
       try {
         await axios.get(url).then((response) => {
-          lat = response.data[1].lat;
-          lon = response.data[1].lon;
-          console.log(lat, lon)
+          if (response.data.length === 1) {
+            lat = response.data[0].lat;
+            lon = response.data[0].lon;
+          } else {
+            lat = response.data[1].lat;
+            lon = response.data[1].lon;
+          }
+          console.log(lat, lon);
         });
         await axios
           .get(
             `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&units=metric&appid=${apikey}`
           )
-          .then((response) => {setData(response.data.current)});
+          .then((response) => {
+            setData(response.data.current);
+          });
       } catch (error) {
         console.log(error);
       }
     };
-    
+
     fetchData();
   }, []);
 
@@ -76,7 +83,9 @@ function WeatherHub() {
           <div className="WeatherHub_right_Location">
             <p className="WeatherHub_right_Location-Name">{place}</p>
             <div className="WeatherHub_right_Location-codinate">
-              <a className="WeatherHub_right_Location-codinate1">{data.pressure}pa</a>
+              <a className="WeatherHub_right_Location-codinate1">
+                {data.pressure}pa
+              </a>
             </div>
           </div>
           <div className="WeatherHub_temp">
