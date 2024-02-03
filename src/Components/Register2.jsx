@@ -1,5 +1,5 @@
 import React from "react";
-import '../style/Register2.css';
+import '../Style/Register2.css';
 import { useNavigate } from "react-router-dom";
 function Register2(){
     const navigate = useNavigate();

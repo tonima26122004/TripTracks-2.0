@@ -12,6 +12,7 @@ nav{
     justify-content: center;
     align-items: center;
     margin: auto;
+    margin-left: 160px;
 }
 .Logo img{
     width: 158px;

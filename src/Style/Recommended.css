@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300;0,5..1200,400;0,5..1200,500;0,5..1200,600;0,5..1200,700;0,5..1200,800;0,5..1200,900;1,5..1200,300;1,5..1200,400;1,5..1200,500;1,5..1200,600;1,5..1200,700;1,5..1200,800;1,5..1200,900&display=swap');
+
+.Recommended-title{
+    margin-top: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #402E32;
+    font-size: 32px;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    line-height: 40px;
+    word-wrap: break-word;
+}
+.Recommended-subtitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #402E32;
+    opacity: 0.50;
+    font-size: 20px;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+.Recommended-subtitle-link{
+    color: #FB8500;
+    font-size: 20px;
+    font-family: 'Playfair Display';
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+.All-Cards{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+.card{
+    width: 296px;
+    height: 444px;
+    position: relative; 
+    background: #FFF7F1; 
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.Card_name{
+    margin-top: 24px;
+    margin-left: 24px;
+    color: #402E32;
+    font-size: 24px;
+    font-family: 'Lora';
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+.Card_about{
+    margin-top: 8px;
+    margin-left: 24px;
+    opacity: 0.50;
+    color: #402E32;
+    font-size: 16px;
+    font-family: 'Playfair';
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 16px;
+    word-wrap: break-word;
+}
+.Card_charge{
+    margin-top: 24px;
+    margin-left: 24px;
+    color: #402E32;
+    font-size: 24px;
+    font-family: 'Lora';
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+.Card_review{
+    color: #B1886A;
+    font-size: 16px;
+    margin-left: 200px;
+    margin-top: -20px;
+    text-align: center;
+    font-family: 'Lora';
+    font-weight: 400;
+    line-height: 16px;
+    word-wrap: break-word;
+}
+.Explore{
+    background-color: #FB8500;
+    border: 0;
+    border-radius: 12px;
+    width: 248px;
+    height: 40px;
+    margin-top: 18px;
+    margin-left: 24px;
+    font-family: 'Playfair';
+    color: #F6EFE6;
+    font-size: 20px;
+}

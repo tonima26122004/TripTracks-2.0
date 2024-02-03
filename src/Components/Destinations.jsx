@@ -1,5 +1,5 @@
 import React from "react";
-import '../style/Destinations.css'
+import '../Style/Destinations.css'
 function Destinations() {
     return(
     <div className="Full_Destinations">

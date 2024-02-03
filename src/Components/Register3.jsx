@@ -1,5 +1,5 @@
 import React from "react";
-import '../style/Register3.css';
+import '../Style/Register3.css';
 import { useNavigate } from "react-router-dom";
 function Register3(){
     const navigate = useNavigate();

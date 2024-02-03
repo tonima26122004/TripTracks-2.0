@@ -1,0 +1,75 @@
+.Subscribe{
+    width: 1000px;
+    height: 380px;
+    place-items: center;
+    margin: auto;
+    text-align: center;
+    background: #F6EFE6;
+    border: none;
+    border-radius: 16px;
+    overflow: unset;
+    margin-bottom: 160px;
+    margin-top: 72px;
+}
+.Subscribe_Title,
+.Subscribe_sub,.Subscribe_input,i{
+    background: transparent;
+}
+.Subscribe_Title{
+    padding-top: 48px;
+    color: #402E32;
+    font-size: 48px;
+    font-family: 'Playfair';
+    font-weight: 550;
+    line-height: 96px;
+    word-wrap: break-word;
+}
+.Subscribe_Title_i{
+    color: #402E32;
+    font-size: 48px;
+    font-family: 'Playfair';
+    font-weight: 550;
+    line-height: 96px;
+    word-wrap: break-word;
+}
+.Subscribe_sub{
+    color: #402E32;
+    opacity: 0.5;
+    font-size: 22px;
+    font-family: 'Playfair';
+    font-weight: 200;
+    word-wrap: break-word;
+}
+.Subscribe_input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 40px;
+    position: relative;
+}
+.Subscribe_mail{
+    width: 520px;
+    height: 64px;
+    font-size: 24px;
+    padding-left: 24px;
+    font-weight: 400;
+    line-height: 18px;
+    opacity: 0.7;
+    font-family: 'Playfair';
+    word-break: break-word;
+    border: 0;
+    border-radius: 16px;
+    outline: none;
+    background-color: #FFFFFF;
+}
+.Subscribe_button{
+    width: 200px;
+    height: 64px;  
+    background-color: #FB8500;
+    border: 0;
+    font-family: 'Playfair';
+    border-radius: 12px;
+    color: #F6EFE6;
+    font-size: 28px;   
+}

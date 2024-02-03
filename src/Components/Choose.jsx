@@ -1,5 +1,5 @@
 import React from "react";
-import '../style/Choose.css';
+import '../Style/Choose.css';
 function Choose(){
     return(
         <div className="Choose">

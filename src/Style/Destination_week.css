@@ -1,0 +1,69 @@
+.Week_bg_img{
+    width: 100%;
+    height: 888px;
+    margin-top: 104px;
+    position: absolute;
+}
+.Week_card{
+    width: 600px;
+    height: 344px;
+    position: absolute;
+    margin-left: 913px;
+    margin-top: 376px;
+    background: #FFF7F1;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+.Week_text{
+    margin-top: 40px;
+    margin-left: 64px;
+    color: #402E32;
+    opacity: 0.70;
+    font-size: 32px;
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    line-height: 32px;
+    word-wrap: break-word;
+}
+.Week_title{
+    margin-top: 16px;
+    margin-left: 64px;
+    color: #402E32;
+    font-size: 64px;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    line-height: 64px;
+    word-wrap: break-word;
+}
+.Week_about-1st{
+    margin-top: 16px;
+    margin-left: 64px;
+    color: #402E32;
+    opacity: 0.50;
+    font-size: 16px;
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    line-height: 19.55px;
+    word-wrap: break-word;
+}
+.Week_about{
+    margin-left: 64px;
+    color: #402E32;
+    opacity: 0.50;
+    font-size: 16px;
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    line-height: 19.55px;
+    word-wrap: break-word;
+}
+.Week_explore{
+    background-color: #FB8500;
+    border: 0;
+    border-radius: 12px;
+    width: 198px;
+    height: 48px;
+    margin-top: 18px;
+    margin-left: 64px;
+    color: #F6EFE6;
+    font-size: 20px;
+}

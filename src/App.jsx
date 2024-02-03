@@ -3,14 +3,24 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './Components/Home';
 import Review from "./Components/Review";
 import Planning from "./Components/Planning";
+import Register from './Components/Register';
+import Register1 from './Components/Register1';
+import Register2 from './Components/Register2';
+import Register3 from './Components/Register3';
+import Choose from "./Components/Choose";
 
 const App = () => {
   return (
     <BrowserRouter>
     <Routes>
-      <Route path='/' element={<Home />} />
+      <Route path='/Home' element={<Home />} />
       <Route path='/planning' element={<Planning />} />
       <Route path='/review' element={<Review />} />
+      <Route path='/' element={<Register />} />
+      <Route path='/register1' element={<Register1 />} />
+      <Route path='/register2' element={<Register2 />} />
+      <Route path='/register3' element={<Register3 />} />
+      <Route path='/Choose' element={<Choose />} />
     </Routes>
   </BrowserRouter>
   )

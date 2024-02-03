@@ -31,7 +31,7 @@
     background: transparent;
     color: #402E32;
     font-size: 80px;
-    font-family: 'Playfair Display';
+    font-family: 'Playfair';
     font-weight: 600;
     text-transform:capitalize;
     line-height: 115.20px;
@@ -73,6 +73,7 @@
     margin-left: auto; 
     margin-right: auto; 
     width: 212px;
+    font-family: 'Playfair Display';
     height: 48px;  
     background-color: #FB8500;
     border: 0;

@@ -1,0 +1,110 @@
+.reason{
+    margin-top: 1064px;
+    margin-left: 80px;
+    margin-right: px;
+}
+.reason-title{
+    color: #402E32;
+    font-size: 40px;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 78px;
+    
+}
+.reason-title-link{
+    color: #FB8500;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 700;
+    line-height: 40px;
+    position: static;
+}
+.Reason_contener{
+    display: flex;
+    justify-content: space-between;
+}
+.reason_image{
+    width: 488px;
+    height: 600px;
+    border-radius: 8px;
+}
+.Reason_card{
+    margin-top: 24px;
+    width: 618px;
+    height: 200px;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+.Reason_card2{
+    width: 618px;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-left: 320px;
+    margin-right: 80px;
+}
+.Reason_card_img1,
+.Reason_card_img2,
+.Reason_card_img3
+{
+    height: 124px;
+    width: 56px;
+    position: static;
+}
+.Reason_card_img2{
+    margin-left: 448px;
+}
+.Reason_card_title{
+    background: transparent;
+    position: absolute;
+    margin-top: -98px;
+    color: #402E32;
+    font-size: 32px;
+    font-family: 'Playfair Display';
+    font-weight: 600;
+    line-height: 32px;
+    word-wrap: break-word;
+}
+.Reason_card_about_main{
+    background: transparent;
+    position: absolute;
+    margin-top: -64px;
+    color: #402E32;
+    opacity: 0.60;
+    font-size: 20px;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    line-height: 23px;
+    word-wrap: break-word;
+}
+
+.Reason_card_about
+{
+    background: transparent;
+    position: absolute;
+    margin-top: -40px;
+    color: #402E32;
+    opacity: 0.60;
+    font-size: 20px;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    line-height: 23px;
+    word-wrap: break-word;
+}
+.Reason_card_title2{
+    background: transparent;
+    position: absolute;
+    margin-top: -98px;
+    margin-left: 300px;
+    color: #402E32;
+    font-size: 32px;
+    font-family: 'Playfair Display';
+    font-weight: 600;
+    line-height: 32px;
+    word-wrap: break-word;
+}
