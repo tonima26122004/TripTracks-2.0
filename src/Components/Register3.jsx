@@ -9,14 +9,14 @@ function Register3({ handleChange, values }) {
   const { email, password, cpassword } = values;
   const navigate = useNavigate();
   const handleAuthenticate = () => {
-    if(password===cpassword && password!==null && cpassword!==null){
-        try{
-            createUserWithEmailAndPassword(auth,email,password);
-        }
-        catch(e){
-            console.log(e);
-        }
+    if (password === cpassword && password !== null && cpassword !== null) {
+      try {
+        createUserWithEmailAndPassword(auth, email, password);
+      } catch (e) {
+        console.log(e);
+      }
     }
+
   };
   return (
     <div className="Main3">
@@ -55,10 +55,11 @@ function Register3({ handleChange, values }) {
           onChange={handleChange("cpassword")}
           required
         />
-        <button type="submit" onClick={()=>{
-            handleAuthenticate();
-            navigate("/choose");
-        }} className="Main1_button">
+        <button
+          type="submit"
+          onClick={()=>{handleAuthenticate(); navigate("/choose")}}
+          className="bg-[#FB8500] w-[212px] h-[48px] text-[24px] ml-auto mr-auto absolute left-0 right-0 rounded-[12px] mt-[72px] text-[#F6EFE6]"
+        >
           Continue
         </button>
       </div>
