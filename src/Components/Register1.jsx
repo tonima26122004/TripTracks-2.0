@@ -1,8 +1,13 @@
 import React from "react";
-import "../style/Register1.css";
-import { useNavigate } from "react-router-dom";
-function Register1() {
-  const navigate = useNavigate();
+import "../Style/Register1.css";
+
+function Register1({ nextStep, handleChange, values }) {
+
+  const Continue = (e) => {
+    e.preventDefault();
+    nextStep();
+  };
+
   return (
     <div className="Main1">
       <img className="Ellipse" src="/images/Ellipse_login.png" alt="bg" />
@@ -28,9 +33,11 @@ function Register1() {
           type="text"
           id="Username"
           placeholder="Username"
+          value={values.username}
+          onChange={handleChange("username")}
           required
         />
-        <button onClick={() => navigate("/Register2")} className="Main1_button">
+        <button onClick={Continue} className="Main1_button">
           Continue
         </button>
       </div>
