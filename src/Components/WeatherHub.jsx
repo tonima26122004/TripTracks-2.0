@@ -54,13 +54,14 @@ function WeatherHub() {
   return (
     <div>
       <WeatherHub_Nav />
-      <img className="Ellipse" src="/images/Ellipse_login.png" alt="bg" />
+      <img className="WeatherHub_Ellipse" src="/images/Ellipse_login.png" alt="bg"/>
       <div className="WeatherHub">
         <h1 className="WeatherHub_title">
           Get live weather and altitude info for your travel spots instantly
         </h1>
 
         <div className="WeatherHub_Search">
+          <div className="WeatherHub_Search_box">
           <div className="WeatherHub-Input">
             <input
               className="WeatherHub-Input"
@@ -75,6 +76,8 @@ function WeatherHub() {
             src="/images/Search Button.png"
             alt="Search"
           />
+          </div>
+          
         </div>
       </div>
       <div className="WeatherHub_main">
@@ -89,12 +92,66 @@ function WeatherHub() {
             </div>
           </div>
           <div className="WeatherHub_temp">
-            <FiSun className="WeatherHub_temp_icon" />
-            <a className="WeatherHub_Temp_lock">{Math.round(data.temp)}°</a>
-            <a className="WeatherHub_temp-C">C</a>
+            <img className="WeatherHub_temp_type"src="/images/01d.png" alt="type"/>
+            <p className="WeatherHub_Temp_lock">{Math.round(data.temp)}°</p>
+            <p className="WeatherHub_temp-C">C</p>
           </div>
-          <div className=""></div>
+
+          <div className="WeatherHub_Type">
+            <div className="WeatherHub_Type_box">
+              <div className="WeatherHub_Humidity_Type">
+                <div className="WeatherHub_Humidity_Type_name">
+                  <img className="WeatherHub_Type_img" src="/images/Humidity.png" alt="Humidity"/>
+                  <p className="WeatherHub_Type_title">Humidity</p>
+                </div>
+                <p className="WeatherHub_Type_Humidity_data">72%</p>
+              </div>
+              <div className="WeatherHub_Type">
+                <div className="WeatherHub_Type_name">
+                  <img className="WeatherHub_Type_img" src="/images/Sunrise.png" alt="Sunrise"/>
+                  <p className="WeatherHub_Type_title">Sunrise</p>
+                </div>
+                
+                <p className="WeatherHub_Type_data">06:00 am</p>
+              </div>
+              <div className="WeatherHub_Type">
+                <div className="WeatherHub_Type_name">
+                  <img className="WeatherHub_Type_img" src="/images/Rainfall.png" alt="Rainfall"/>
+                  <p className="WeatherHub_Type_title">Rainfall</p>
+                </div>
+                
+                <p className="WeatherHub_Type_data">750 mm</p>
+              </div>
+            </div>
+
+            <div className="WeatherHub_Type_box">
+              <div className="WeatherHub_Windspeed_Type">
+                <div className="WeatherHub_Windspeed_Type_name">
+                  <img className="WeatherHub_Type_img" src="/images/Windspeed.png" alt="Windspeed"/>
+                  <p className="WeatherHub_Type_title">Windspeed</p>
+                </div>
+                
+                <p className="WeatherHub_Type_data">2.06 MpH</p>
+              </div>
+              <div className="WeatherHub_Type">
+                <div className="WeatherHub_Type_name">
+                  <img className="WeatherHub_Type_img" src="/images/Sunset.png" alt="Sunset"/>
+                  <p className="WeatherHub_Type_title">Sunset</p>
+                </div>
+                <p className="WeatherHub_Type_data">05:30 pm</p>
+              </div>
+              <div className="WeatherHub_Type">
+                <div className="WeatherHub_Type_name">
+                  <img className="WeatherHub_Snowfall_Type_img" src="/images/Snowfall.png" alt="Snowfall"/>
+                  <p className="WeatherHub_Type_title">Snowfall</p>
+                </div>
+                <p className="WeatherHub_Type_data">rainfall</p>
+              </div>
+            </div>
+          </div>
         </div>
+
+
         <div className="WeatherHub_left">
           <div className="WeatherHub_left_texts">
             <Link
