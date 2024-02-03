@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 import '../Style/Choose.css';
 
 function Choose(){
+    
+    const tab1 = 'discover';
+    const tab2 = 'planning';
+    const tab3 = 'review';
+    
     return(
         <div className="Choose">
             <div className="Choose_top">
@@ -12,21 +17,21 @@ function Choose(){
             </div>
             <h1 className="Choose_title">How do you want to use TripTracks?</h1>
             <div className="Choose_allcards">
-                <Link to="/home" className="Choose_Card">
+                <Link to={`/choose/${tab1}`} className="Choose_Card">
                     <img className="Choose_Card_img" src="/images/card_pick.png" alt="Choose_Card_img"/>
                     <h1 className="Choose_Card_title">Discover</h1>
                     <p className="Choose_Card_sub">Explore off-the-beaten-path </p>
                     <p className="Choose_Card_sub">destinations, access interactive </p>
                     <p className="Choose_Card_sub">maps and enjoy exclusive deals</p>
                 </Link>
-                <Link to="/planning" className="Choose_Card">
+                <Link to={`/choose/${tab2}`} className="Choose_Card">
                     <img className="Choose_Card_img" src="/images/card_pick.png" alt="Choose_Card_img"/>
                     <h1 className="Choose_Card_title">Planning</h1>
                     <p className="Choose_Card_sub">Create tailored plans based on </p>
                     <p className="Choose_Card_sub">your preferences with AI </p>
                     <p className="Choose_Card_sub">integrated budgeting assistance.</p>
                 </Link>
-                <Link to="/review" className="Choose_Card">
+                <Link to={`/choose/${tab3}`} className="Choose_Card">
                     <img className="Choose_Card_img" src="/images/card_pick.png" alt="Choose_Card_img"/>
                     <h1 className="Choose_Card_title">Review</h1>
                     <p className="Choose_Card_sub">Share your unique perspectives  </p>

@@ -22,7 +22,7 @@ function WeatherHub() {
   const apikey = "a0e9da674faffcda28aede6a39250e7e";
   const url = `http://api.openweathermap.org/geo/1.0/direct?q=${place}&limit=2&appid=${apikey}`;
   let lon, lat;
-
+  
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -47,7 +47,7 @@ function WeatherHub() {
         console.log(error);
       }
     };
-
+    
     fetchData();
   }, []);
 

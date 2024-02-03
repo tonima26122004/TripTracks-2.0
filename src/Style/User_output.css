@@ -15,10 +15,6 @@ ul {
       color: #402E32;
       font-weight: 600;
   }
-  .planning,
-  .Review{
-    opacity: 0.4;
-  }
   .User_text {
     display: flex;
     justify-content:center;
