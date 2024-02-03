@@ -1,5 +1,5 @@
 import React from "react";
-import '../style/DroupDownProfile.css';
+import '../Style/DroupDownProfile.css';
 function DroupDownProfile(){
     return(
         <div className="DroupDownProfile">
