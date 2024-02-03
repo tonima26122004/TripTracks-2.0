@@ -1,11 +1,10 @@
-import React from "react";
-import '../Style/Register2.css';
+import React, { useState } from "react";
 import "../Style/Register2.css";
 import { useNavigate } from "react-router-dom";
 
 function Register2({ nextStep, prevStep, handleChange, values }) {
   const navigate = useNavigate();
-  
+
   const Continue = (e) => {
     e.preventDefault();
     nextStep();
