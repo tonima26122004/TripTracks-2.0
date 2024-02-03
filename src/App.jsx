@@ -17,6 +17,8 @@ const App = () => {
       <Route path='/planning' element={<Planning />} />
       <Route path='/review' element={<Review />} />
       <Route path='/weatherHub/:place' element={<WeatherHub />} />
+      <Route path='/weatherHub/:place/tomorrow' element={<WeatherHub />} />
+      <Route path='/weatherHub/:place/7days' element={<WeatherHub />} />
       <Route path='/login' element={<Login />} />
       <Route path='/' element={<Signup />} />
     </Routes>
