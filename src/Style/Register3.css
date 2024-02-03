@@ -1,0 +1,45 @@
+.Main3_num3{
+    margin-left: -16px;   
+}
+.Main3_text{
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center;
+    margin-top: 24px;
+}
+.Main3_qu1,.Main3_qu2{
+    color: #402E32;
+    font-size: 40px;
+    font-family: 'Playfair Display';
+    font-weight: 500px;
+    text-transform:capitalize;
+    line-height: 40px;
+    word-wrap: break-word;
+}
+.Main3_ans1,.Main3_ans2{
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    width: 400px;
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 16px;
+    margin-top: 4px;
+    background: transparent;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 24px;
+    word-break: break-word;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #FB8500;
+  
+}
+.Main3_qu2{
+    background: transparent;
+    margin-top: 72px;
+}
