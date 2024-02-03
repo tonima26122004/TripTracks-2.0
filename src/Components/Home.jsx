@@ -5,8 +5,9 @@ function Home() {
   return (
     <div>
       <Navbar />
-      <Useroutput />
-      
+      <div className="flex items-center m-10">
+        <h1 className=" text-5xl">Discover</h1>
+      </div>
     </div>
   );
 }
