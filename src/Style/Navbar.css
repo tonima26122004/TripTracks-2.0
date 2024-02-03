@@ -18,7 +18,7 @@ nav{
     height: 32px;
 }
 .rightside{
-    right: 200px;
+    right: 80px;
     top: 20px; 
     position: absolute;
     display: flex;

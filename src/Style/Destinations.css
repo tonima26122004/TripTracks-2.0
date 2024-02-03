@@ -1,8 +1,9 @@
 .Destinations_title{
     color: #402E32;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     text-transform: capitalize;
+    font-family: 'Playfair Display';
     line-height: 32px;
     word-wrap: break-word;
     margin-top: 32px;
@@ -51,6 +52,7 @@
     color: #402E32;
     font-size: 24px;
     font-weight: 600;
+    font-family: 'Playfair Display';
     text-transform: capitalize;
     line-height: 20px;
     word-wrap: break-word;
@@ -62,7 +64,7 @@
     opacity: 0.70;
     font-size: 16px;
     font-weight: 400;
-    font-family: 'Playfair';
+    font-family: 'Playfair Display';
     text-transform: capitalize;
     line-height: 20px;
     word-wrap: break-word;

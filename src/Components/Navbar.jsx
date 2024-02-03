@@ -14,7 +14,7 @@ function Navbar() {
               <img src="/images/TripTracks.png" alt="Logo" />
             </a>
           </div>
-          <div className="flex justify-center items-center ml-[500px] p-[15px]">
+          <div className="flex justify-center text-centers items-center ml-[240px] p-[15px]">
             <ul className="flex items-center list-none gap-[80px] text-2xl ">
               <li className="flex flex-col items-center justify-center gap-[3px] cursor-pointer">
                 <Link style={{ textDecoration: "none" }} to="/">
