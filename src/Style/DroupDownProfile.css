@@ -1,0 +1,41 @@
+.DroupDownProfile{
+    position: relative;
+    margin-left:1300px;
+    top: 4.5rem;
+    right: 1.5rem;
+    width: 120px;
+    height: 80px;
+    margin-top: 24px;
+    padding: 0px;
+    border-radius: 15px;
+    background: #F6EFE6; 
+    box-shadow: 0px 0px 3px 2px #f4e9db;
+
+}
+.DroupDownProfile::before{
+    content: '';
+    position: absolute;
+    top: -0.6rem;
+    right: 5.5rem;
+    width: 16px;
+    height: 12px;
+    transform: rotate(38deg);
+    border: 0.2px ; 
+    background-color: #F6EFE6;
+}
+.DroupDownProfile_ul{
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+}
+.DroupDownProfile_ul_menu{
+    padding-left: 10px;
+    background: transparent;
+    text-decoration: none;
+    color: #402E32;
+    opacity: 0.8;
+    font-size: 18px;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    word-wrap: break-word;
+}
