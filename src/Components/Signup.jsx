@@ -3,14 +3,7 @@ import Register1 from "./Register1";
 import Register2 from "./Register2";
 import Register3 from "./Register3";
 import Register from "./Register";
-import Choose from "./Choose";
-
-
-Signup.propTypes = {
-  nextStep: PropTypes.func.isRequired,
-  handleChange: PropTypes.func.isRequired,
-  prevStep: PropTypes.func.isRequired,
-};
+import PropTypes from 'prop-types';
 
 export default class Signup extends Component {
   state = {
@@ -77,3 +70,9 @@ export default class Signup extends Component {
     }
   }
 }
+
+Signup.propTypes = {
+  nextStep: PropTypes.func,
+  handleChange: PropTypes.func,
+  prevStep: PropTypes.func,
+};
