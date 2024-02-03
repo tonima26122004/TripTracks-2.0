@@ -5,6 +5,13 @@ import Register3 from "./Register3";
 import Register from "./Register";
 import Choose from "./Choose";
 
+
+Signup.propTypes = {
+  nextStep: PropTypes.func.isRequired,
+  handleChange: PropTypes.func.isRequired,
+  prevStep: PropTypes.func.isRequired,
+};
+
 export default class Signup extends Component {
   state = {
     step: 1,
@@ -30,7 +37,8 @@ export default class Signup extends Component {
   handleChange = (input) => (e) => {
     this.setState({ [input]: e.target.value });
   };
-
+  
+  
   render() {
     const { step } = this.state;
     const { email, username, password, cpassword } = this.state;
