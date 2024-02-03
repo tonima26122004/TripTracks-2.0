@@ -1,14 +1,15 @@
 import React from "react";
 import Navbar from "./Navbar";
 
-function Home() {
+const Planning = () => {
   return (
     <div>
       <Navbar />
       <div className="flex items-center m-10">
-        <h1 className=" text-5xl">Discover</h1>
+        <h1 className="text-5xl">Planning</h1>
       </div>
     </div>
   );
-}
-export default Home;
+};
+
+export default Planning;

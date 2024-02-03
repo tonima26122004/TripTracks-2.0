@@ -6,9 +6,10 @@ nav{
     box-shadow: 0px 4px 4px #F6EFE6;
 }
 .Logo{
-    left: 160px; 
-    top: 34px;
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 .Logo img{
     width: 158px;
