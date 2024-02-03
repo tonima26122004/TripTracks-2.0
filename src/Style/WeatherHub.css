@@ -13,8 +13,6 @@
     align-items: center;
     justify-content: center;
     margin-top: 16px;
-    
-    
 }
 .WeatherHub_Search_box{
     display: flex;
@@ -57,7 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 560px;
+    gap: 240px;
 }
 .WeatherHub_left {
     position: relative;
@@ -155,15 +153,12 @@
     display: flex;
     background: transparent;
     justify-content: center;
-    align-items: center;
-    margin-top: 16px;
+    align-items: center; 
     flex-direction: row;
-    gap: 24px;
 }
-.WeatherHub_temp_icon{
-    width: 56px;
-    height: 56px;
-    color: #FB8500;
+.WeatherHub_temp_type{
+    width: 96px;
+    height: 96px;
 }
 .WeatherHub_Temp_lock{
     color: #402E32;
@@ -182,4 +177,120 @@
     font-weight: 600;
     line-height: 40px;
     word-wrap: break-word;
+}
+.WeatherHub_Type{
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 16px;
+}
+.WeatherHub_Type_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+.WeatherHub_Type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 88px;
+}
+.WeatherHub_Type_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+}
+.WeatherHub_Snowfall_Type_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+}
+.WeatherHub_Type_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #402E32;
+    font-size: 20px;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.WeatherHub_Type_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.WeatherHub_Type_data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #402E32;
+    font-size: 18px;
+    opacity: 0.8;
+    font-family: 'Lora';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.WeatherHub_Ellipse{
+    background: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    width: 80%;
+    height: 25%;
+}
+.WeatherHub_Windspeed_Type_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+}
+.WeatherHub_Windspeed_Type{
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 52px;
+}
+.WeatherHub_Humidity_Type_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.WeatherHub_Humidity_Type{
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 48px;
+}
+.WeatherHub_Type_Humidity_data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #402E32;
+    font-size: 18px;
+    opacity: 0.8;
+    font-family: 'Lora';
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-left: 40px;
 }
