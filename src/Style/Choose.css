@@ -1,0 +1,115 @@
+.Choose_top{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    top: 0px;
+}
+.Choose_Ellipse_login{
+    width: 580px;
+    height: 180px;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center;
+}
+.Choose_TripTracks{
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 80px;
+    width: 315px;
+    height: 64px;
+   
+    
+}
+.Choose_title{
+    text-align: center;
+    padding-top: 170px;
+    color: #402E32;
+    font-size: 64px;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    text-transform:capitalize;
+    line-height: 76px;
+    word-wrap: break-word;
+}
+.Choose_allcards{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+.Choose_Card{
+    background: #F6EFE6;
+    width: 335px;
+    height: 430px;
+    border-radius: 18px;
+}
+.Choose_Card_img{
+    margin-top: 16px;
+    margin-left: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 220px;
+    border-radius: 18px;
+}
+.Choose_Card_title{
+    margin-top: 8px;
+    text-align: center;
+    background: transparent;
+    color: #B1886A;
+    font-size: 40px;
+    font-family: 'Playfair Display';
+    font-weight: 600;
+    line-height: 64px;
+    word-wrap: break-word;
+}
+.Choose_Card_sub{
+    text-align: center;
+    background: transparent;
+    color: #402E32;
+    opacity: 0.5;
+    font-size: 18px;
+    font-family: 'Playfair Display';
+    font-weight: 200;
+    word-wrap: break-word;
+}
+.Choose_button{
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 212px;
+    height: 48px;  
+    background-color: #FB8500;
+    border: 0;
+    border-radius: 12px;
+    margin-top: 32px;
+    color: #F6EFE6;
+    font-size: 24px;    
+}
+.Choose_skip{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 160px;
+    margin-top: 40px;
+    background: transparent;
+    color: #402E32;
+    opacity: 0.7;
+    font-size: 24px;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    word-wrap: break-word;
+}

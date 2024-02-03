@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 ul {
     display: flex;
     justify-content: space-between;
@@ -11,6 +13,7 @@ ul {
   }
   .Discover,.planning,
   .Review{
+      font-family: 'Playfair Display';
       text-decoration: none;
       color: #402E32;
       font-weight: 600;
@@ -24,6 +27,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    font-family: 'Playfair Display';
     margin: 30px 550px;
     font-size: 24px;
     font-weight: 500px;

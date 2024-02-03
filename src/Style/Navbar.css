@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 nav{
     display: flex;
     height: 98px;
@@ -27,6 +29,7 @@ nav{
     font-size: 24px;
     text-decoration: none;
     text-transform: capitalize; 
+    font-family: 'Playfair Display';
     word-wrap: break-word;
     position: relative;
     top: 16px;

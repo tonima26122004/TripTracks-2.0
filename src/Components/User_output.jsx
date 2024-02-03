@@ -1,6 +1,6 @@
 import React from "react";
 import "../style/User_output.css";
-
+import { Link } from "react-router-dom";
 
 function Useroutput() {
   return (
