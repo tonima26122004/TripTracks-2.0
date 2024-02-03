@@ -36,7 +36,7 @@ function Register2({ nextStep, prevStep, handleChange, values }) {
         <p className="Main1_qu">We will reach out to you on</p>
         <input
           className="Main1_ans"
-          type="text"
+          type="email"
           id="email"
           placeholder="Username@gmail.com"
           value={values.email}
