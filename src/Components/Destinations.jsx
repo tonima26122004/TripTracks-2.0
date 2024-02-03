@@ -1,6 +1,14 @@
 import React from "react";
 import '../Style/Destinations.css'
+import { Link } from 'react-router-dom'
+
 function Destinations() {
+    
+    const place1 = 'Kashmir';
+    const place2 = 'Rajasthan';
+    const place3 = 'Sikkim';
+    const place4 = 'Kerala';
+    
     return(
     <div className="Full_Destinations">
         <h1 className="Destinations_title">Top Destinations</h1>
@@ -16,7 +24,7 @@ function Destinations() {
                     <p className="days">1-7 Feb</p>
                     <p className="Charge">₹22,375</p>
                     <p className="rating">★4.40</p>
-                    <a href="#" className="View-details">View details{">"}</a>
+                    <Link to={`/weatherHub/${place1}`} className="View-details">View details{">"}</Link>
                 </div>
             </div>
             <div className="contener">
@@ -33,7 +41,7 @@ function Destinations() {
                     </div>
                     <div className="Destinations_text-right">
                         <p className="rating">★4.79</p>
-                        <a href="#" className="View-details">View details{">"}</a>
+                        <Link to={`/weatherHub/${place2}`} className="View-details">View details{">"}</Link>
                     </div>
                 </div>
                 
@@ -49,7 +57,7 @@ function Destinations() {
                     <p className="days">3-7 Mar</p>
                     <p className="Charge">₹22,375</p>
                     <p className="rating">★4.49</p>
-                    <a href="#" className="View-details">View details{">"}</a>
+                    <Link to={`/weatherHub/${place3}`} className="View-details">View details{">"}</Link>
                 </div>
                 
             </div>
@@ -64,7 +72,7 @@ function Destinations() {
                     <p className="days">1-7 Feb</p>
                     <p className="Charge">₹22,375</p>
                     <p className="rating">★4.35</p>
-                    <a href="#" className="View-details">View details{">"}</a>
+                    <Link to={`/weatherHub/${place4}`} className="View-details">View details{">"}</Link>
                 </div>
             </div>
         </div>
