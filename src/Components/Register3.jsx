@@ -23,6 +23,31 @@ function Register3(){
                 <button onClick={()=>navigate("/Choose")} className="Main1_button">Continue</button>
             </div>
         </div>
-    );
+      </div>
+      <div className="Main3_text">
+        <p className="Main3_qu1">Set Password</p>
+        <input
+          className="Main3_ans1"
+          type="text"
+          id="password"
+          value={values.password}
+          onChange={handleChange("password")}
+          required
+        />
+        <p className="Main3_qu2">Confirm Password</p>
+        <input
+          className="Main3_ans2"
+          type="text"
+          id="password"
+          value={values.cpassword}
+          onChange={handleChange("cpassword")}
+          required
+        />
+        <button onClick={handleAuthenticate} className="Main1_button">
+          Continue
+        </button>
+      </div>
+    </div>
+  );
 }
 export default Register3;

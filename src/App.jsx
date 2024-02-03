@@ -13,6 +13,7 @@ const App = () => {
   return (
     <BrowserRouter>
     <Routes>
+<<<<<<< HEAD
       <Route path='/Home' element={<Home />} />
       <Route path='/planning' element={<Planning />} />
       <Route path='/review' element={<Review />} />
@@ -21,6 +22,13 @@ const App = () => {
       <Route path='/register2' element={<Register2 />} />
       <Route path='/register3' element={<Register3 />} />
       <Route path='/Choose' element={<Choose />} />
+=======
+      <Route path='/home' element={<Home />} />
+      <Route path='/choose' element={<Choose />} />
+      <Route path='/planning' element={<Planning />} />
+      <Route path='/review' element={<Review />} />
+      <Route path='/' element={<Signup />} />
+>>>>>>> ea27b4fcb55b7e871da702a41c8a82106547b929
     </Routes>
   </BrowserRouter>
   )
