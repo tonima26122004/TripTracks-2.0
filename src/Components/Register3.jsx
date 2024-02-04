@@ -1,27 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Style/Register3.css";
 import "../Style/Register1.css";
-import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../config/firebase";
 import { useNavigate } from "react-router-dom";
-
+import axios from "axios";
 
 function Register3({ handleChange, values }) {
-   const { email, password, cpassword } = values;
-  const navigate = useNavigate();
-  const handleAuthenticate = () => {
-    
-    if (password === cpassword && password !== null && cpassword !== null) {
+  const { email, username, password, cpassword } = values;
 
+  const navigate = useNavigate();
+
+  const addUsers = (e) => {
+    e.preventDefault();
+
+    axios.post("http://localhost:3000/addUser", email, username);
+  };
+
+  /*const handleAuthenticate = () => {
+    if (password === cpassword && password !== null && cpassword !== null) {
       try {
         createUserWithEmailAndPassword(auth, email, password);
       } catch (e) {
         console.log(e);
       }
     }
+  };*/
 
-  };
-  
   return (
     <div className="Main3">
       <img className="Ellipse" src="/images/Ellipse_login.png" alt="bg" />
@@ -61,7 +64,10 @@ function Register3({ handleChange, values }) {
         />
         <button
           type="submit"
-          onClick={()=>{handleAuthenticate(); navigate("/Choose")}}
+          onClick={() => {
+            addUsers();
+            navigate("/Choose");
+          }}
           className="bg-[#FB8500] w-[212px] h-[48px] text-[24px] ml-auto mr-auto absolute left-0 right-0 rounded-[12px] mt-[72px] text-[#F6EFE6]"
         >
           Continue
