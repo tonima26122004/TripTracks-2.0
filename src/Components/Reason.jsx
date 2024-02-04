@@ -6,7 +6,7 @@ function Reason() {
             <h1 className="reason-title"><a className="reason-title-link" href="#">“choose us” </a> for a reason</h1>
             <div className="Reason_contener">
                 <div className="Reason_contener_left">
-                    <img className="reason_image" src="/images/card_pick.png" alt="Image"/>
+                    <img className="reason_image" src="/images/Choose_us.png" alt="Image"/>
                 </div>
                 <div className="Reason_contener_right">
                     <div className="Reason_card">
