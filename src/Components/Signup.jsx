@@ -3,7 +3,8 @@ import Register1 from "./Register1";
 import Register2 from "./Register2";
 import Register3 from "./Register3";
 import Register from "./Register";
-import PropTypes from 'prop-types';
+import Choose from "./Choose";
+import PropTypes from "prop-types";
 
 export default class Signup extends Component {
   state = {
@@ -13,7 +14,7 @@ export default class Signup extends Component {
     password: "",
     cpassword: "",
   };
-  
+
   // go back to previous step
   prevStep = () => {
     const { step } = this.state;
@@ -30,8 +31,7 @@ export default class Signup extends Component {
   handleChange = (input) => (e) => {
     this.setState({ [input]: e.target.value });
   };
-  
-  
+
   render() {
     const { step } = this.state;
     const { email, username, password, cpassword } = this.state;
@@ -60,6 +60,15 @@ export default class Signup extends Component {
       case 4:
         return (
           <Register3
+            nextStep={this.nextStep}
+            prevStep={this.prevStep}
+            handleChange={this.handleChange}
+            values={values}
+          />
+        );
+      case 5:
+        return (
+          <Choose
             nextStep={this.nextStep}
             prevStep={this.prevStep}
             handleChange={this.handleChange}

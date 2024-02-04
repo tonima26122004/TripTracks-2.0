@@ -4,17 +4,15 @@ import "../Style/Register1.css";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-function Register3({ handleChange, values }) {
+function Register3({ handleChange, values, nextStep }) {
   const { email, username, password, cpassword } = values;
-
   const navigate = useNavigate();
-
-  const addUsers = (e) => {
+  
+  /* const addUsers = async (e) => {
     e.preventDefault();
-
     axios.post("http://localhost:3000/addUser", email, username);
-  };
-
+  }; */
+  
   /*const handleAuthenticate = () => {
     if (password === cpassword && password !== null && cpassword !== null) {
       try {
@@ -24,7 +22,12 @@ function Register3({ handleChange, values }) {
       }
     }
   };*/
-
+  
+  const Continue = (e) => {
+    e.preventDefault();
+    nextStep();
+  };
+  
   return (
     <div className="Main3">
       <img className="Ellipse" src="/images/Ellipse_login.png" alt="bg" />
@@ -64,10 +67,7 @@ function Register3({ handleChange, values }) {
         />
         <button
           type="submit"
-          onClick={() => {
-            addUsers();
-            navigate("/Choose");
-          }}
+          onClick={Continue}
           className="bg-[#FB8500] w-[212px] h-[48px] text-[24px] ml-auto mr-auto absolute left-0 right-0 rounded-[12px] mt-[72px] text-[#F6EFE6]"
         >
           Continue
