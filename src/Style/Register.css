@@ -82,3 +82,18 @@
     color: #F6EFE6;
     font-size: 24px;      
 }
+.Login{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color: #402E32;
+    opacity: 0.80;
+    font-size: 14px;
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    line-height: 36px;
+    word-wrap: break-word;
+    text-decoration-line: underline;
+}

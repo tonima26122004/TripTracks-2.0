@@ -1,5 +1,6 @@
 import React from "react";
 import "../Style/Register.css";
+import { Link } from 'react-router-dom';
 
 const Register = ({ nextStep }) => {
 
@@ -23,6 +24,7 @@ const Register = ({ nextStep }) => {
       <button onClick={Continue} className="Main_button">
         Let’s get Started
       </button>
+      <Link className="Login" >Already Have an account?</Link>
     </div>
   );
 };
