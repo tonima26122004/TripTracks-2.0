@@ -1,25 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Style/Register3.css";
 import "../Style/Register1.css";
-import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../config/firebase";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
-
-function Register3({ handleChange, values }) {
-   const { email, password, cpassword } = values;
+function Register3({ handleChange, values, nextStep }) {
+  const { email, username, password, cpassword } = values;
   const navigate = useNavigate();
-  const handleAuthenticate = () => {
-    
+  
+  /* const addUsers = async (e) => {
+    e.preventDefault();
+    axios.post("http://localhost:3000/addUser", email, username);
+  }; */
+  
+  /*const handleAuthenticate = () => {
     if (password === cpassword && password !== null && cpassword !== null) {
-
       try {
         createUserWithEmailAndPassword(auth, email, password);
       } catch (e) {
         console.log(e);
       }
     }
-
+  };*/
+  
+  const Continue = (e) => {
+    e.preventDefault();
+    nextStep();
   };
   
   return (
@@ -61,7 +67,7 @@ function Register3({ handleChange, values }) {
         />
         <button
           type="submit"
-          onClick={()=>{handleAuthenticate(); navigate("/Choose")}}
+          onClick={Continue}
           className="bg-[#FB8500] w-[212px] h-[48px] text-[24px] ml-auto mr-auto absolute left-0 right-0 rounded-[12px] mt-[72px] text-[#F6EFE6]"
         >
           Continue
