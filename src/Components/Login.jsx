@@ -48,7 +48,6 @@ function Login() {
           type="email"
           id="password"
           placeholder="Username@gmail.com"
-          value={email}
           onChange={handleChange}
           required
         />
@@ -58,7 +57,6 @@ function Login() {
           type="text"
           id="password"
           placeholder="****************"
-          value={password}
           onChange={handleChange}
           required
         />
