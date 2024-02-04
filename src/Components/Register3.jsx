@@ -2,26 +2,10 @@ import React, { useEffect, useState } from "react";
 import "../Style/Register3.css";
 import "../Style/Register1.css";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 
 function Register3({ handleChange, values, nextStep }) {
   const { email, username, password, cpassword } = values;
   const navigate = useNavigate();
-  
-  /* const addUsers = async (e) => {
-    e.preventDefault();
-    axios.post("http://localhost:3000/addUser", email, username);
-  }; */
-  
-  /*const handleAuthenticate = () => {
-    if (password === cpassword && password !== null && cpassword !== null) {
-      try {
-        createUserWithEmailAndPassword(auth, email, password);
-      } catch (e) {
-        console.log(e);
-      }
-    }
-  };*/
   
   const Continue = (e) => {
     e.preventDefault();
