@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import '../Style/Navbar.css';
 import { Link } from "react-router-dom";
+import DroupDownProfile from "./Dropdown";
+import { FaBarsStaggered } from "react-icons/fa6";
 
 
 function Navbar(){
+    const[openPofile, setOpenPofile] = useState(false)
     return(
         <div className="NAV">
             <div className="NAV_left">
@@ -15,10 +18,13 @@ function Navbar(){
                     <Link className="NAV_Weatherhub" to="/weatherHub">WeatherHub</Link>
                 </div>
                 <img className="NAV_notification" src="/images/Notification.svg" alt="notification"/>
-                <img  className="User" src="/images/User_pof.svg" alt="Usre_profile"/>
+                <button className="User" onClick={() => setOpenPofile((perv) =>!perv)}><FaBarsStaggered size={35} /></button>
+                
             </div>
-
-            
+            {
+                    openPofile &&  <DroupDownProfile/>
+                }
+               
         </div>
         
     );

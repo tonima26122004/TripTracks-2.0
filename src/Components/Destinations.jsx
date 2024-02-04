@@ -1,6 +1,7 @@
 import React from "react";
-import '../Style/Destinations.css'
-import { Link } from 'react-router-dom'
+import '../Style/Destinations.css';
+import { Link } from 'react-router-dom';
+
 
 function Destinations() {
     
