@@ -69,6 +69,8 @@ const App = () => {
           }
         />
         <Route path="/weatherHub" element={<WeatherHub />} />
+        <Route path="/weatherHub/tomorrow" element={<WeatherHub />} />
+        <Route path="/weatherHub/7days" element={<WeatherHub />} />
         <Route path="/weatherHub/:place" element={<WeatherHub />} />
         <Route path="/weatherHub/:place/tomorrow" element={<WeatherHub />} />
         <Route path="/weatherHub/:place/7days" element={<WeatherHub />} />
